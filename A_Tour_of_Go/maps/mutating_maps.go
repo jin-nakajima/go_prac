@@ -18,5 +18,7 @@ func main() {
 	fmt.Println("The Value:", v, "Present?", ok)
 
 	// 値の存在確認
-	if v, ok = m["Answer"]
+	if v, ok = m["Answer"]; !ok {
+		fmt.Println("nothing")
+	}
 }
