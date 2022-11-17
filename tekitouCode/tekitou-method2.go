@@ -19,9 +19,14 @@ func (playUser User) StrSum() string {
 	return result
 }
 
+func (playUser Test) StrSum() string {
+	result := playUser.hoge
+	return result
+}
+
 func main() {
-	playUser := User{"nishimura", ":30"}
-	// playUser := Test{"fuga"}
+	// playUser := User{"nishimura", ":30"}
+	playUser := Test{"fuga"}
 	// ↑playUser.StrSum undefined
 	// (type Test has no field or method StrSum)
 	fmt.Println("Hello", playUser.StrSum())
